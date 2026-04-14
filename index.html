@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PULSE — Data Intelligence, Simplified</title>
+  <meta name="description" content="PULSE brings AI-powered analytics to your fingertips. Real-time dashboards, predictive insights, and seamless team collaboration — all in one platform.">
+  <meta property="og:title" content="PULSE — Data Intelligence, Simplified">
+  <meta property="og:description" content="Transform raw data into actionable intelligence with PULSE's AI-powered analytics platform.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#4f46e5">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PULSE",
+    "description": "AI-powered analytics platform for businesses",
+    "applicationCategory": "BusinessApplication"
+  }
+  </script>
+
+  <!-- Google Fonts: Space Grotesk + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================== SITE HEADER ================== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a href="#home" class="logo" aria-label="PULSE — Home">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <rect width="36" height="36" rx="9" fill="url(#logo-grad)"/>
+          <path d="M8 24 L13 14 L18 20 L22 11 L27 22" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <circle cx="27" cy="22" r="2.5" fill="white"/>
+          <defs>
+            <linearGradient id="logo-grad" x1="0" y1="0" x2="36" y2="36">
+              <stop offset="0%" stop-color="#4f46e5"/>
+              <stop offset="100%" stop-color="#7c3aed"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">PULSE</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#about" class="nav-link">About</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="#pricing" class="btn btn--ghost-dark btn--sm">Sign In</a>
+        <a href="#pricing" class="btn btn--primary btn--sm">Start Free Trial</a>
+      </div>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="#home" class="nav-link mobile-nav-link">Home</a>
+    <a href="#features" class="nav-link mobile-nav-link">Features</a>
+    <a href="#pricing" class="nav-link mobile-nav-link">Pricing</a>
+    <a href="#about" class="nav-link mobile-nav-link">About</a>
+    <div class="header-actions" style="margin-top: var(--space-3);">
+      <a href="#pricing" class="btn btn--primary" style="width:100%; justify-content:center;">Start Free Trial</a>
+    </div>
+  </nav>
+
+  <!-- ================== PAGE: HOME ================== -->
+  <main id="page-home" class="page active" aria-label="Home page">
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero section">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Hero Content -->
+          <div class="hero-content">
+            <div class="hero-badge reveal">
+              <span class="dot" aria-hidden="true"></span>
+              AI-Powered Analytics Platform
+            </div>
+            <h1 class="hero-title reveal reveal-delay-1">
+              Transform Raw Data Into
+              <span class="highlight">Actionable Intelligence</span>
+            </h1>
+            <p class="hero-sub reveal reveal-delay-2">
+              PULSE brings AI-powered analytics to your fingertips. Real-time dashboards, predictive insights, and seamless team collaboration — all in one platform.
+            </p>
+            <div class="hero-ctas reveal reveal-delay-3">
+              <a href="#pricing" class="btn btn--primary btn--lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                Start Free Trial
+              </a>
+              <a href="#features" class="btn btn--ghost btn--lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Watch Demo
+              </a>
+            </div>
+            <div class="hero-trust reveal reveal-delay-4">
+              <div class="trust-avatars" aria-hidden="true">
+                <div class="avatar">SC</div>
+                <div class="avatar">MR</div>
+                <div class="avatar">PS</div>
+                <div class="avatar">JK</div>
+              </div>
+              <span class="hero-trust-text">Trusted by 2,500+ companies worldwide</span>
+            </div>
+          </div>
+
+          <!-- Hero Visual -->
+          <div class="hero-visual reveal reveal-delay-2">
+            <div class="hero-img-wrapper">
+              <img src="./assets/hero-dashboard.png" alt="PULSE analytics dashboard showing real-time data visualizations and metrics" width="700" height="480" loading="eager">
+              <!-- Floating badges -->
+              <div class="hero-badge-float float-1" aria-hidden="true">
+                <div class="float-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                </div>
+                <div class="float-label">
+                  <span class="float-value">+32.4%</span>
+                  <span class="float-desc">Revenue growth</span>
+                </div>
+              </div>
+              <div class="hero-badge-float float-2" aria-hidden="true">
+                <div class="float-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <div class="float-label">
+                  <span class="float-value">&lt;50ms</span>
+                  <span class="float-desc">Query latency</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof Bar -->
+    <section class="social-proof" aria-label="Trusted by leading companies">
+      <div class="container">
+        <div class="social-proof-inner">
+          <span class="social-proof-text">Trusted by teams at</span>
+          <div class="company-logos">
+
+            <!-- Stripe -->
+            <div class="company-logo" aria-label="Stripe">
+              <svg viewBox="0 0 60 25" fill="none" xmlns="http://www.w3.org/2000/svg" height="20" width="48">
+                <path d="M28.3 10c0-2.7 2.2-3.8 5-3.8 2.8 0 4.8 1.5 4.8 4H34c0-.8-.7-1.3-1.7-1.3-1.1 0-1.7.5-1.7 1.2 0 2.2 7.1.9 7.1 5.8 0 2.8-2.2 4.1-5.3 4.1-3.1 0-5.2-1.6-5.2-4.1h3.1c0 1 .8 1.5 2.1 1.5 1.2 0 1.9-.5 1.9-1.3.1-2.3-7.1-1-7.1-6.1zm-9.9 9.8l3-14.1h3.3l-3 14.1h-3.3zm-5.1 0L10.2 5.7h3.4l2.1 9.2 2.1-9.2h3.3l-3.2 14.1h-3.6zm-9-10.6v3.6h5.2v2.7H4.3v4.3H1V6.4h9.1v2.8H4.3zm44.5-3.1h3.3l-3.3 8.8 1 5.3h-3.2l-.7-3.2-1.6 3.2H41l5.7-14.1h2.1zm1.1 6.3c.5-1.3.9-2.8 1.2-4.3l-2.4 6.3h1.4c-.1-.7-.2-1.4-.2-2z" fill="currentColor"/>
+              </svg>
+            </div>
+
+            <!-- Shopify -->
+            <div class="company-logo" aria-label="Shopify">
+              <svg viewBox="0 0 56 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="20" width="45">
+                <path d="M11.6 2.1c-.1 0-.2.1-.3.1-.1 0-1.4.4-2.8.8-.3-.8-.7-1.6-1.3-2.1-.5-.4-1-.6-1.6-.6h-.1c-.2-.3-.5-.5-.8-.7-.6-.5-1.3-.7-2.2-.7H.5c-.3 0-.5.2-.5.5v.3c0 .1 0 .2.1.3l2.7 7.7H.6c-.2 0-.4.2-.4.4 0 .1 0 .1.1.2L3.7 19h.7l3.5-10H6.3c-.3 0-.5-.2-.5-.5V8.1c0-.1 0-.3.1-.4l.9-2.6c.2-.5.7-.9 1.2-.9H10c.5 0 .9.4.9.9V8c0 .3-.2.5-.5.5H9.2L5.7 19h.7l4-10.4 1.5-4.1c.1-.2 0-.4-.3-.4zm8.4 13.7c-.6 1.1-1.8 1.8-3.1 1.8-2 0-3.6-1.6-3.6-3.6s1.6-3.6 3.6-3.6c.8 0 1.6.3 2.2.8l.8-.8c-.8-.8-1.9-1.3-3-1.3-2.5 0-4.5 2-4.5 4.5 0 2.5 2 4.5 4.5 4.5 1.7 0 3.1-.9 3.9-2.2l-.8-.1z" fill="currentColor"/>
+              </svg>
+              <span class="company-logo-name">Shopify</span>
+            </div>
+
+            <!-- Notion -->
+            <div class="company-logo" aria-label="Notion">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="22" width="22" fill="currentColor">
+                <path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.14c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"/>
+              </svg>
+              <span class="company-logo-name">Notion</span>
+            </div>
+
+            <!-- Vercel -->
+            <div class="company-logo" aria-label="Vercel">
+              <svg viewBox="0 0 76 16" fill="none" xmlns="http://www.w3.org/2000/svg" height="16" width="48">
+                <path d="M8 0L16 14H0L8 0Z" fill="currentColor"/>
+                <path d="M30.35 10.97L32.72 4.07H34.5L31.26 12.97H29.44L26.2 4.07H28L30.35 10.97ZM42.96 8.88H37.71C37.83 10.2 38.69 10.97 39.85 10.97C40.73 10.97 41.38 10.61 41.72 9.97L43.22 10.65C42.63 11.77 41.44 12.5 39.85 12.5C37.66 12.5 36.06 10.97 36.06 8.55C36.06 6.13 37.63 4.55 39.77 4.55C41.89 4.55 43.02 6.06 43.02 8.1L42.96 8.88ZM37.73 7.59H41.38C41.22 6.52 40.58 5.96 39.73 5.96C38.84 5.96 38.07 6.52 37.73 7.59ZM48.44 4.55C50.5 4.55 51.32 5.8 51.32 5.8V4.62H52.98V13.12H51.32V11.3C51.32 11.3 50.5 12.5 48.44 12.5C46.38 12.5 44.9 10.91 44.9 8.52C44.9 6.13 46.38 4.55 48.44 4.55ZM48.78 10.97C50.03 10.97 51.32 10.06 51.32 8.52C51.32 6.98 50.03 6.08 48.78 6.08C47.53 6.08 46.56 7.01 46.56 8.52C46.56 10.04 47.53 10.97 48.78 10.97ZM56.82 12.97H55.15V1.62H56.82V12.97ZM65.7 8.88H60.45C60.57 10.2 61.43 10.97 62.59 10.97C63.47 10.97 64.12 10.61 64.46 9.97L65.96 10.65C65.37 11.77 64.18 12.5 62.59 12.5C60.4 12.5 58.8 10.97 58.8 8.55C58.8 6.13 60.37 4.55 62.51 4.55C64.63 4.55 65.76 6.06 65.76 8.1L65.7 8.88ZM60.47 7.59H64.12C63.96 6.52 63.32 5.96 62.47 5.96C61.58 5.96 60.81 6.52 60.47 7.59ZM70.19 12.97H68.52V4.62H70.19V6.07C70.57 5.01 71.45 4.55 72.27 4.55C73.14 4.55 73.76 4.95 74.13 5.6L72.75 6.87C72.52 6.41 72.16 6.15 71.67 6.15C70.85 6.15 70.19 6.87 70.19 8.28V12.97Z" fill="currentColor"/>
+              </svg>
+            </div>
+
+            <!-- Linear -->
+            <div class="company-logo" aria-label="Linear">
+              <svg viewBox="0 0 65 14" fill="none" xmlns="http://www.w3.org/2000/svg" height="14" width="55">
+                <path d="M0 13.04L7 0l7 13.04H0zm9.74.96H14V0H9.74v14zM17.2 0v14h4.26v-9.6L27.2 14h3.13V0H26.2v9.61L20.33 0H17.2zm17.48 0v14h10.39v-3.49h-6.1V8.74h5.39V5.25h-5.39V3.49h6.1V0H34.68zm15.6 5.01h3.22c.92 0 1.65.73 1.65 1.65 0 .92-.73 1.65-1.65 1.65H50.28V5.01zm-4.29-5V14h4.29V11.8h3.3c2.89 0 5.23-2.34 5.23-5.23 0-2.88-2.34-5.22-5.23-5.22l-7.59-.35zm14.33 0v14h4.29V0h-4.29z" fill="currentColor"/>
+              </svg>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Overview -->
+    <section class="features-overview section" aria-label="Features overview">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Why PULSE</span>
+          <h2 class="section-title">Everything your team needs to <span class="gradient-text">move faster</span></h2>
+          <p class="section-sub">From raw data streams to boardroom insights — PULSE handles the complexity so your team can focus on what matters.</p>
+        </div>
+        <div class="features-overview-grid">
+          <div class="feature-card reveal">
+            <div class="feature-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Real-Time Analytics</h3>
+            <p>Monitor your metrics as they happen. Live dashboards update in milliseconds so you're always working with the freshest data.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-1">
+            <div class="feature-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <h3>AI-Powered Insights</h3>
+            <p>Let machine learning surface the patterns you'd miss. Automated anomaly detection and predictive trend analysis built in.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-2">
+            <div class="feature-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Team Collaboration</h3>
+            <p>Share dashboards, set alerts, and align your entire team around the same data. Role-based access keeps everyone on the right track.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section section" aria-label="Platform statistics">
+      <div class="container">
+        <div class="section-header reveal" style="color: #fff;">
+          <span class="section-label" style="color: #a5b4fc; background: rgba(99,102,241,0.15); border-color: rgba(99,102,241,0.3);">By the Numbers</span>
+          <h2 class="section-title" style="color: #fff;">Built for enterprise scale</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <div class="stat-value" data-counter data-target="2.5" data-suffix="B+" data-decimals="1">2.5B+</div>
+            <div class="stat-label">Events processed daily</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-1">
+            <div class="stat-value" data-counter data-target="99.99" data-suffix="%" data-decimals="2">99.99%</div>
+            <div class="stat-label">Uptime SLA</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <div class="stat-value" data-counter data-target="150" data-suffix="+">150+</div>
+            <div class="stat-label">Integrations</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <div class="stat-value" data-counter data-prefix="&lt;" data-target="50" data-suffix="ms">&lt;50ms</div>
+            <div class="stat-label">Query response time</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section" aria-label="Customer testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Customer Stories</span>
+          <h2 class="section-title">Loved by data teams <span class="gradient-text">worldwide</span></h2>
+          <p class="section-sub">See how leading companies use PULSE to make faster, smarter decisions.</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="stars" aria-label="5 stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-quote">"PULSE replaced three different tools for us. The AI insights alone saved our team 20 hours per week. Absolutely transformative for how we operate."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">SC</div>
+              <div class="author-info">
+                <span class="author-name">Sarah Chen</span>
+                <span class="author-role">VP Analytics · TechFlow</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal reveal-delay-1">
+            <div class="stars" aria-label="5 stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-quote">"The real-time dashboards are incredibly fast. We can finally make data-driven decisions in the moment — not hours after the fact."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true" style="background: linear-gradient(135deg, #0ea5e9, #7c3aed);">MR</div>
+              <div class="author-info">
+                <span class="author-name">Marcus Rivera</span>
+                <span class="author-role">CEO · GrowthStack</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal reveal-delay-2">
+            <div class="stars" aria-label="5 stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-quote">"Best analytics platform we've ever used. The onboarding was seamless and the support is world-class. Couldn't imagine going back."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true" style="background: linear-gradient(135deg, #10b981, #4f46e5);">PS</div>
+              <div class="author-info">
+                <span class="author-name">Priya Sharma</span>
+                <span class="author-role">Head of Data · CloudNine</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section" aria-label="Call to action">
+      <div class="container">
+        <div class="section-header reveal" style="margin-bottom: var(--space-10);">
+          <h2 class="cta-title">Ready to See Your Data <span style="background: linear-gradient(135deg, #818cf8, #c084fc); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Differently?</span></h2>
+          <p class="cta-sub">Start your 14-day free trial. No credit card required.</p>
+        </div>
+        <div class="reveal reveal-delay-1" style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap;">
+          <a href="#pricing" class="btn btn--primary btn--lg">
+            Get Started Free
+          </a>
+          <a href="#features" class="btn btn--ghost btn--lg">
+            Explore Features
+          </a>
+        </div>
+        <p class="reveal reveal-delay-2" style="text-align: center; font-size: var(--text-xs); color: rgba(241,245,249,0.45); margin-top: var(--space-6);">
+          No credit card · Cancel anytime · SOC 2 certified
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================== PAGE: FEATURES ================== -->
+  <main id="page-features" class="page" aria-label="Features page">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container container--narrow">
+        <span class="section-label reveal" style="color: #a5b4fc; background: rgba(99,102,241,0.15); border-color: rgba(99,102,241,0.3);">Platform Features</span>
+        <h1 class="page-hero-title reveal reveal-delay-1">Everything You Need to<br><span style="background: linear-gradient(135deg, #818cf8, #c084fc); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Master Your Data</span></h1>
+        <p class="page-hero-sub reveal reveal-delay-2">Three powerful modules that work seamlessly together to give your team complete visibility into what matters most.</p>
+      </div>
+    </section>
+
+    <!-- Feature Blocks -->
+    <section class="section" aria-label="Feature details">
+      <div class="container">
+        <div class="feature-blocks">
+
+          <!-- Feature 1: Real-Time Analytics -->
+          <div class="feature-block reveal">
+            <img class="feature-block-img" src="./assets/feature-analytics.png" alt="Real-time analytics dashboard with live data visualization and charts" width="600" height="450" loading="lazy">
+            <div class="feature-block-content">
+              <span class="section-label">Real-Time Analytics</span>
+              <h2>Live dashboards that move<br><span class="gradient-text">at the speed of your data</span></h2>
+              <ul class="feature-list" role="list">
+                <li>
+                  <span class="feature-list-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                  Live data streaming with sub-50ms latency — never miss a beat
+                </li>
+                <li>
+                  <span class="feature-list-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                  Drag-and-drop customizable widgets and flexible layouts
+                </li>
+                <li>
+                  <span class="feature-list-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                  Multi-source data aggregation from any pipeline or warehouse
+                </li>
+                <li>
+                  <span class="feature-list-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                  One-click export to PDF, CSV, or scheduled email reports
+                </li>
+              </ul>
+              <a href="#pricing" class="btn btn--primary">Start Free Trial</a>
+            </div>
+          </div>
+
+          <!-- Feature 2: AI-Powered Insights -->
+          <div class="feature-block reverse reveal">
+            <img class="feature-block-img" src="./assets/feature-ai.png" alt="AI-powered insights neural network visualization showing pattern detection" width="600" height="450" loading="lazy">
+            <div class="feature-block-content">
+              <span class="section-label">AI-Powered Insights</span>
+              <h2>Intelligence that works<br><span class="gradient-text">while you sleep</span></h2>
+              <ul class="feature-list" role="list">
+                <li>
+                  <span class="feature-list-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                  Automated anomaly detection — catch issues before they escalate
+                </li>
+                <li>
+                  <span class="feature-list-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                  Predictive trend analysis powered by state-of-the-art ML models
+                </li>
+                <li>
+                  <span class="feature-list-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                  Natural language queries — just ask your data a question
+                </li>
+                <li>
+                  <span class="feature-list-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                  Smart alerts that fire before problems become crises
+                </li>
+              </ul>
+              <a href="#pricing" class="btn btn--primary">Start Free Trial</a>
+            </div>
+          </div>
+
+          <!-- Feature 3: Team Collaboration -->
+          <div class="feature-block reveal">
+            <img class="feature-block-img" src="./assets/feature-collab.png" alt="Team collaboration visualization with connected nodes and shared dashboards" width="600" height="450" loading="lazy">
+            <div class="feature-block-content">
+              <span class="section-label">Team Collaboration</span>
+              <h2>One source of truth<br><span class="gradient-text">for every team</span></h2>
+              <ul class="feature-list" role="list">
+                <li>
+                  <span class="feature-list-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                  Shared dashboards with granular role-based access controls
+                </li>
+                <li>
+                  <span class="feature-list-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                  Real-time comments and annotations directly on charts
+                </li>
+                <li>
+                  <span class="feature-list-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                  Scheduled report distribution to any stakeholder on any cadence
+                </li>
+                <li>
+                  <span class="feature-list-icon" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>
+                  Native Slack, Teams, and email integrations out of the box
+                </li>
+              </ul>
+              <a href="#pricing" class="btn btn--primary">Start Free Trial</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrations -->
+    <section class="integrations-section section" aria-label="Integrations">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Integrations</span>
+          <h2 class="section-title">Connects with your <span class="gradient-text">entire stack</span></h2>
+          <p class="section-sub">150+ integrations so PULSE works with the tools you already use — no migrations required.</p>
+        </div>
+        <div class="integrations-grid">
+          <div class="integration-item reveal">
+            <div class="integration-icon" style="background: #4A154B;" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zm1.271 0a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zm0 1.271a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zm10.122 2.521a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zm-1.268 0a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zm-2.523 10.122a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zm0-1.268a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/></svg></div>
+            <span class="integration-name">Slack</span>
+          </div>
+          <div class="integration-item reveal reveal-delay-1">
+            <div class="integration-icon" style="background: #00A1E0;" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M11.5 0C5.149 0 0 5.149 0 11.5S5.149 23 11.5 23 23 17.851 23 11.5 17.851 0 11.5 0zm0 21C6.253 21 2 16.747 2 11.5S6.253 2 11.5 2 21 6.253 21 11.5 16.747 21 11.5 21zm1-12.5h-2v7h7v-2h-5V8.5z"/></svg>
+            </div>
+            <span class="integration-name">Salesforce</span>
+          </div>
+          <div class="integration-item reveal reveal-delay-2">
+            <div class="integration-icon" style="background: #FF7A59;" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><circle cx="12" cy="12" r="10"/><text x="6" y="16" font-size="10" font-weight="bold">Hs</text></svg>
+            </div>
+            <span class="integration-name">HubSpot</span>
+          </div>
+          <div class="integration-item reveal">
+            <div class="integration-icon" style="background: #E37400;" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M22.84 1H1.16C.52 1 0 1.52 0 2.16v19.68C0 22.48.52 23 1.16 23H22.84C23.48 23 24 22.48 24 21.84V2.16C24 1.52 23.48 1 22.84 1zM7.2 20.12H3.84V9.36H7.2v10.76zM5.52 7.92a1.92 1.92 0 110-3.84 1.92 1.92 0 010 3.84zm14.64 12.2h-3.36v-5.28c0-1.26-.02-2.88-1.76-2.88-1.76 0-2.03 1.37-2.03 2.79v5.37H9.65V9.36h3.22v1.47h.05c.45-.85 1.54-1.74 3.17-1.74 3.39 0 4.02 2.23 4.02 5.13l.05 5.9z"/></svg>
+            </div>
+            <span class="integration-name">Google Analytics</span>
+          </div>
+          <div class="integration-item reveal reveal-delay-1">
+            <div class="integration-icon" style="background: #232F3E;" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#FF9900"><path d="M13.23 10.56v-.33c-.99.01-2.04.04-3.03.17v.31c.97-.13 2.02-.15 3.03-.15zm5.04 2.8c-.14.26-.36.48-.72.48-.55 0-.88-.38-.88-.92 0-.51.3-.93.85-.93.35 0 .59.16.71.43l.56-.27c-.24-.47-.7-.75-1.29-.75-.94 0-1.51.63-1.51 1.52 0 .9.58 1.52 1.53 1.52.59 0 1.07-.27 1.31-.75l-.56-.33zm-8.12-3.18c-1.13.1-2.23.22-3.35.37v.36c1.1-.15 2.22-.27 3.35-.37v-.36zm10.36 2.21c-.5 0-.84.36-.84.84 0 .49.33.84.84.84.5 0 .84-.35.84-.84 0-.48-.34-.84-.84-.84zm-4.57-.02c-.34 0-.56.22-.64.53h1.22c-.07-.32-.28-.53-.58-.53zm-5.74.17v1.5h.61v-1.82c-.2.08-.41.2-.61.32zM12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1z"/></svg>
+            </div>
+            <span class="integration-name">AWS</span>
+          </div>
+          <div class="integration-item reveal reveal-delay-2">
+            <div class="integration-icon" style="background: #29B5E8;" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.3l7.5 3.75-7.5 3.75L4.5 8.05 12 4.3zm-8.5 4.5l8 4v7.5l-8-4V8.8zm9.5 11.5V13.3l8-4v7.5l-8 4z"/></svg>
+            </div>
+            <span class="integration-name">Snowflake</span>
+          </div>
+          <div class="integration-item reveal">
+            <div class="integration-icon" style="background: #336791;" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v4c0 1.657 3.582 3 8 3s8-1.343 8-3V5"/><path d="M4 9v4c0 1.657 3.582 3 8 3s8-1.343 8-3V9"/><path d="M4 13v4c0 1.657 3.582 3 8 3s8-1.343 8-3v-4"/></svg>
+            </div>
+            <span class="integration-name">PostgreSQL</span>
+          </div>
+          <div class="integration-item reveal reveal-delay-1">
+            <div class="integration-icon" style="background: #4479A1;" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.151zm-4.786 1.021a.747.747 0 00-.46.053c-.14.06-.22.18-.28.3-.014.046-.02.12-.02.18v.013h.074c.053-.046.1-.073.167-.12.18-.12.373-.18.567-.18.187 0 .36.047.52.127l.034-.02c.02-.074.014-.148 0-.22-.04-.1-.127-.168-.227-.207-.087-.033-.167-.06-.253-.073-.054.004-.107.01-.16.02a.797.797 0 00-.214.046l.006.081zm11.054-5.516c.04.02.074.04.107.06A11.944 11.944 0 0012.013 0c-2.687 0-5.134.88-7.1 2.36a11.847 11.847 0 00-.42.34 12.016 12.016 0 00-1.994 2.166A11.948 11.948 0 000 12c0 6.627 5.373 12 12 12 6.628 0 12-5.373 12-12 0-4.354-2.327-8.16-5.82-10.19l-.007.196zm-1.38 11.474c.047.32.06.64.04.96-.02.267-.06.534-.12.8-.073.28-.174.547-.3.8a7.65 7.65 0 01-.527.854c-.2.267-.42.52-.654.753a7.613 7.613 0 01-.8.627c-.286.187-.58.354-.88.494a7.61 7.61 0 01-.96.32c-.32.08-.647.14-.974.167-.333.02-.66.013-.987-.02a7.645 7.645 0 01-.96-.2 7.555 7.555 0 01-.887-.367 7.643 7.643 0 01-.793-.493 7.567 7.567 0 01-.687-.6 7.457 7.457 0 01-.573-.7 7.449 7.449 0 01-.453-.8 7.518 7.518 0 01-.307-.86 7.542 7.542 0 01-.16-.9 7.71 7.71 0 01-.04-.9 7.618 7.618 0 01.12-.927 7.498 7.498 0 01.273-.893 7.57 7.57 0 01.42-.82 7.568 7.568 0 01.554-.733 7.614 7.614 0 01.673-.633 7.566 7.566 0 01.78-.527 7.517 7.517 0 01.853-.4 7.55 7.55 0 01.9-.267 7.604 7.604 0 01.926-.127 7.592 7.592 0 01.94.027c.307.04.607.1.9.187.3.093.587.213.86.36.273.147.533.32.773.513.24.194.46.4.66.627.2.227.38.473.527.733.153.26.28.534.38.813.1.28.173.566.22.86z"/></svg>
+            </div>
+            <span class="integration-name">MySQL</span>
+          </div>
+          <div class="integration-item reveal reveal-delay-2">
+            <div class="integration-icon" style="background: #635BFF;" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z"/></svg>
+            </div>
+            <span class="integration-name">Stripe</span>
+          </div>
+          <div class="integration-item reveal">
+            <div class="integration-icon" style="background: #96BF48;" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M15.337 7.503l-2.052-.862.723-4.08L11.62 4.62l.002.001-.002.001-2.388-2.06L8.509 6.64l-2.052.862L9 9.116l-1.14 3.43 2.754-1.104L12 10.33l1.386 1.112 2.754 1.104-1.14-3.43 2.543-1.613zM12 13.498L5.39 16.58 7.254 24h9.492l1.864-7.42L12 13.498z"/></svg>
+            </div>
+            <span class="integration-name">Shopify</span>
+          </div>
+          <div class="integration-item reveal reveal-delay-1">
+            <div class="integration-icon" style="background: #0052CC;" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M11.571 11.513H8.447M20.33 12c0 4.605-3.729 8.333-8.333 8.333-4.604 0-8.333-3.728-8.333-8.333 0-4.604 3.729-8.333 8.333-8.333 4.604 0 8.333 3.729 8.333 8.333zm-8.333-3.334v6.667"/></svg>
+            </div>
+            <span class="integration-name">Jira</span>
+          </div>
+          <div class="integration-item reveal reveal-delay-2">
+            <div class="integration-icon" style="background: #181717;" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <span class="integration-name">GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================== PAGE: PRICING ================== -->
+  <main id="page-pricing" class="page" aria-label="Pricing page">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container container--narrow">
+        <span class="section-label reveal" style="color: #a5b4fc; background: rgba(99,102,241,0.15); border-color: rgba(99,102,241,0.3);">Pricing</span>
+        <h1 class="page-hero-title reveal reveal-delay-1">Simple, <span style="background: linear-gradient(135deg, #818cf8, #c084fc); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Transparent</span> Pricing</h1>
+        <p class="page-hero-sub reveal reveal-delay-2">Start free. Scale as you grow. No surprise fees, no hidden costs.</p>
+      </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="section" aria-label="Pricing plans">
+      <div class="container">
+        <div class="pricing-toggle reveal">
+          <span>Monthly</span>
+          <span class="pricing-save-badge">Save 20% annually</span>
+          <span>Annual</span>
+        </div>
+        <div class="pricing-grid">
+
+          <!-- Starter -->
+          <div class="pricing-card reveal">
+            <div class="pricing-plan-name">Starter</div>
+            <div class="pricing-price">
+              <span class="price-amount">Free</span>
+            </div>
+            <p class="pricing-desc">Perfect for individuals and small teams getting started with data analytics.</p>
+            <div class="pricing-divider"></div>
+            <ul class="pricing-features" role="list">
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> Up to 3 dashboards</li>
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> 10K events/month</li>
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> 1 team member</li>
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> 7-day data retention</li>
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> Community support</li>
+            </ul>
+            <a href="#" class="pricing-cta outline" target="_blank" rel="noopener noreferrer">Start Free</a>
+          </div>
+
+          <!-- Pro (Popular) -->
+          <div class="pricing-card popular reveal reveal-delay-1">
+            <span class="popular-badge">Most Popular</span>
+            <div class="pricing-plan-name">Pro</div>
+            <div class="pricing-price">
+              <span class="price-amount">$49</span>
+              <span class="price-period">/month billed annually</span>
+            </div>
+            <p class="pricing-desc">For growing teams that need power, scale, and AI-driven intelligence.</p>
+            <div class="pricing-divider"></div>
+            <ul class="pricing-features" role="list">
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> Unlimited dashboards</li>
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> 1M events/month</li>
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> 10 team members</li>
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> 90-day data retention</li>
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> AI insights included</li>
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> Priority support</li>
+            </ul>
+            <a href="#" class="pricing-cta primary" target="_blank" rel="noopener noreferrer">Start Free Trial</a>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="pricing-card reveal reveal-delay-2">
+            <div class="pricing-plan-name">Enterprise</div>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+            </div>
+            <p class="pricing-desc">For large organizations with advanced security, compliance, and scale needs.</p>
+            <div class="pricing-divider"></div>
+            <ul class="pricing-features" role="list">
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> Everything in Pro</li>
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> Unlimited events</li>
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> Unlimited team members</li>
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> Unlimited data retention</li>
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> Custom integrations</li>
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> Dedicated account manager</li>
+              <li><span class="check" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span> SLA guarantee</li>
+            </ul>
+            <a href="mailto:sales@pulse.io" class="pricing-cta outline" target="_blank" rel="noopener noreferrer">Contact Sales</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section section" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">Common <span class="gradient-text">questions</span></h2>
+          <p class="section-sub">Everything you need to know about PULSE pricing and plans.</p>
+        </div>
+        <div class="faq-list" role="list">
+
+          <div class="faq-item reveal" role="listitem">
+            <button class="faq-question" aria-expanded="false" type="button">
+              What counts as an event?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">An event is any data point sent to PULSE — a page view, a button click, a purchase, a server metric, or any custom action you track. Each unique event call counts toward your monthly limit. Aggregated rollup queries do not count as events.</div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-delay-1" role="listitem">
+            <button class="faq-question" aria-expanded="false" type="button">
+              Can I change plans later?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Yes — you can upgrade or downgrade at any time from your account settings. Upgrades take effect immediately and you're billed the prorated difference. Downgrades take effect at the end of your billing period. No fees for changing plans.</div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-delay-2" role="listitem">
+            <button class="faq-question" aria-expanded="false" type="button">
+              Is there a free trial for Pro?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Absolutely. All Pro plans include a 14-day free trial — no credit card required to start. You'll have access to every Pro feature during the trial. If you decide not to continue, you'll automatically roll back to the free Starter plan.</div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal" role="listitem">
+            <button class="faq-question" aria-expanded="false" type="button">
+              What payment methods do you accept?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">We accept all major credit cards (Visa, Mastercard, American Express), PayPal, and ACH bank transfers for annual plans. Enterprise customers can also pay by invoice with net-30 terms. All payments are processed securely via Stripe.</div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal reveal-delay-1" role="listitem">
+            <button class="faq-question" aria-expanded="false" type="button">
+              Do you offer discounts for nonprofits?
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Yes — we offer a 50% discount on all paid plans for registered nonprofits and educational institutions. Reach out to our team with proof of your nonprofit status and we'll apply the discount to your account within 24 hours.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================== PAGE: ABOUT ================== -->
+  <main id="page-about" class="page" aria-label="About page">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container container--narrow">
+        <span class="section-label reveal" style="color: #a5b4fc; background: rgba(99,102,241,0.15); border-color: rgba(99,102,241,0.3);">Our Story</span>
+        <h1 class="page-hero-title reveal reveal-delay-1">Built by Data People,<br><span style="background: linear-gradient(135deg, #818cf8, #c084fc); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">for Data People</span></h1>
+        <p class="page-hero-sub reveal reveal-delay-2">We believe every team deserves access to world-class analytics — not just those with data engineering armies.</p>
+      </div>
+    </section>
+
+    <!-- Story + Image -->
+    <section class="section" aria-label="Company story">
+      <div class="container">
+        <div class="about-story">
+          <div class="about-story-content reveal">
+            <span class="section-label">Founded 2022</span>
+            <h2>Why we built PULSE</h2>
+            <p>Founded in 2022, PULSE was born from a simple frustration: why is it so hard to get actionable insights from your own data? Our founders — former data engineers at leading tech companies — set out to build the analytics platform they always wished existed.</p>
+            <p>We've spent years in the trenches wiring together data pipelines, maintaining fragile dashboards, and waiting hours for queries to run. We knew there had to be a better way — so we built it.</p>
+            <p>Today, PULSE serves 2,500+ companies across 60 countries, from scrappy startups to Fortune 500 enterprises. Our mission remains the same: make data intelligence accessible to every team, everywhere.</p>
+            <div style="margin-top: var(--space-8);">
+              <a href="#pricing" class="btn btn--primary btn--lg">Join 2,500+ Companies</a>
+            </div>
+          </div>
+          <div class="about-img reveal reveal-delay-1">
+            <img src="./assets/team.png" alt="PULSE team collaborating in a modern office environment" width="600" height="400" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section" style="background: var(--color-surface-2);" aria-label="Company values">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Our Values</span>
+          <h2 class="section-title">What drives us <span class="gradient-text">every day</span></h2>
+        </div>
+        <div class="values-grid">
+          <div class="value-card reveal">
+            <div class="value-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>Customer Obsession</h3>
+            <p>Every feature starts with a customer problem. We talk to our users constantly — their feedback shapes our roadmap, our priorities, and our culture.</p>
+          </div>
+          <div class="value-card reveal reveal-delay-1">
+            <div class="value-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3>Data Privacy First</h3>
+            <p>Your data is yours. Period. We're SOC 2 Type II certified, GDPR compliant, and we'll never sell or share your data with third parties. Ever.</p>
+          </div>
+          <div class="value-card reveal reveal-delay-2">
+            <div class="value-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Built to Scale</h3>
+            <p>From startup to enterprise, PULSE grows with you. Our infrastructure handles trillions of events without breaking a sweat — so you never have to worry about scale.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Metrics -->
+    <section class="section" aria-label="Key company metrics">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">By the Numbers</span>
+          <h2 class="section-title">Momentum that <span class="gradient-text">speaks for itself</span></h2>
+        </div>
+        <div class="metrics-row reveal reveal-delay-1">
+          <div class="metric-item">
+            <div class="metric-value">2022</div>
+            <div class="metric-label">Founded</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">85+</div>
+            <div class="metric-label">Team members</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">$32M</div>
+            <div class="metric-label">Raised (Series B)</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-value">3</div>
+            <div class="metric-label">Global offices</div>
+          </div>
+        </div>
+        <p class="reveal" style="text-align: center; font-size: var(--text-sm); color: var(--color-text-faint); margin-top: var(--space-6);">HQ: San Francisco · London · Tel Aviv</p>
+      </div>
+    </section>
+
+    <!-- Join Team CTA -->
+    <section class="about-cta" aria-label="Careers call to action">
+      <div class="container container--narrow">
+        <div class="reveal">
+          <h2>Join Our Team</h2>
+          <p>We're hiring across engineering, design, and sales. Come build the future of data intelligence with us.</p>
+          <a href="https://jobs.pulse.io" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">View Open Roles</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================== FOOTER ================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo" aria-label="PULSE — Home">
+            <svg class="logo-icon" viewBox="0 0 36 36" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="9" fill="url(#footer-logo-grad)"/>
+              <path d="M8 24 L13 14 L18 20 L22 11 L27 22" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="27" cy="22" r="2.5" fill="white"/>
+              <defs>
+                <linearGradient id="footer-logo-grad" x1="0" y1="0" x2="36" y2="36">
+                  <stop offset="0%" stop-color="#4f46e5"/>
+                  <stop offset="100%" stop-color="#7c3aed"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="logo-text">PULSE</span>
+          </a>
+          <p>Data intelligence, simplified. Turn raw data into actionable insights with AI-powered analytics.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Changelog</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Roadmap</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Blog</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Careers</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Terms of Service</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Security</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          <span>© 2026 PULSE Inc. All rights reserved.</span>
+          <span aria-hidden="true">·</span>
+          <span>Designed by Shir Alhanati</span>
+        </div>
+        <div class="footer-credit"></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
